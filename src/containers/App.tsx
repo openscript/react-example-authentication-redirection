@@ -16,9 +16,7 @@ const App: React.FC = () => {
 
   const defaultProtectedRouteProps: ProtectedRouteProps = {
     isAuthenticated: !!sessionContext.isAuthenticated,
-    isAllowed: true,
     authenticationPath: '/login',
-    restrictedPath: '/',
     redirectPathOnAuthentication: sessionContext.redirectPathOnAuthentication || '',
     setRedirectPathOnAuthentication
   };
